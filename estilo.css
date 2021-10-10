@@ -85,6 +85,14 @@ body{
   padding-left: 10px;
 }
 
+#whats{
+  position: fixed;
+  font-size: xxx-large;  
+  color: white;
+  right: 10px;
+  margin-top: 30vh;
+}
+
 .titulo{
   text-align: center;
   color: var(--cor3);
@@ -119,4 +127,16 @@ body{
   border-right: 1px solid var(--cor2);
   font-size: large;
   font-weight: bold;
+}
+
+footer{
+  background-color: black;
+  color: var(--cor3);
+}
+
+footer ul{
+  list-style: none;
+  columns: 2;
+  font-size: smaller;
+  margin-bottom: 0px;
 }
