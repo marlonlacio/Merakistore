@@ -14,11 +14,15 @@
   }
 
 /*DECLARANDO PROPRIEDADES DA PAGINA*/
+*{
+  box-sizing: border-box;
+}
+
 body{
     margin: 0px;
     padding:0px;
     font-family: var(--font1);
-    background-color: var(--cor2);
+    background-color: var(--cor3);
 }
 
 
@@ -67,7 +71,7 @@ body{
   font-size: small;
   overflow: auto;
   white-space: nowrap;
-  background-color: var(--cor4);
+  background-color: var(--cor3);
 }
 
 #indice ul{
@@ -78,7 +82,7 @@ body{
 }
 
 #indice ul li{
-  border-left: 2px solid grey;
+  border-left: 1px solid black;
   word-spacing: 0px;
   padding: 2px;
   margin: 0px;
@@ -95,8 +99,9 @@ body{
 
 .titulo{
   text-align: center;
-  color: var(--cor3);
+  color: black;
   font-size: large;
+  font-weight: bolder;
 }
 
 .novidades{
@@ -113,6 +118,14 @@ body{
   display: flex;
 }
 
+.item2{
+  margin-left: 10px;
+}
+
+.item2:first-child{
+  margin-left: 0px;
+}
+
 .item img{
   width: 100vw;
 }
@@ -124,7 +137,6 @@ body{
 .preco{
   background-color: var(--cor3);
   text-align: center;
-  border-right: 1px solid var(--cor2);
   font-size: large;
   font-weight: bold;
 }
@@ -139,4 +151,11 @@ footer ul{
   columns: 2;
   font-size: smaller;
   margin-bottom: 0px;
+}
+
+
+@media (min-width:600px){
+  body{
+    background-color: blue;
+  }
 }
